@@ -2,6 +2,12 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": {
+    "/routes/*": {
+      "target": "http://localhost: 8080"
+    }
+  },
+
   "dependencies": {
     "lodash": "^4.17.10",
     "react": "^16.3.2",
